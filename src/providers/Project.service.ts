@@ -1,13 +1,13 @@
 import { Dispatch } from 'react';
 import { Store } from 'tauri-plugin-store-api';
-import { getFsDataPath } from './getFsDataPath';
+import { getData } from './getFsData';
 import { ProjectInterface } from './Projects';
 
 export const PROJECT_STORE_FILE_NAME = 'devy-request-projects.json'; ;
 
 const store = new Store(PROJECT_STORE_FILE_NAME);
 
-const localData = await getFsDataPath(PROJECT_STORE_FILE_NAME);
+const localData = await getData();
 await store.set(PROJECT_STORE_FILE_NAME, localData);
 
 class ProjectService {
