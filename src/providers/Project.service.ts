@@ -2,6 +2,7 @@ import { Dispatch } from 'react';
 import { Store } from 'tauri-plugin-store-api';
 import { getData } from './getFsData';
 import { ProjectInterface } from './Projects';
+import { writeData } from './writeFsData';
 
 export const PROJECT_STORE_FILE_NAME = 'devy-request-projects.json'; ;
 
@@ -17,6 +18,7 @@ class ProjectService {
 
   async refreshProjects () {
     const newData = await this.getProjects();
+    writeData(newData || []);
     this.setState(newData);
   }
 
