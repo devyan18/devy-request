@@ -1,0 +1,16 @@
+.requests{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.back {
+  cursor: pointer;
+  margin: .3rem 0;
+  font-size: 1.5rem;
+  color: #09f;
+}
+
+.back:hover {
+  text-decoration: underline;
+}

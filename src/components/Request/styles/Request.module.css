@@ -1,0 +1,18 @@
+.request {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: all .2s ease-in-out;
+  border-radius: 4px;
+  padding: 0px 4px;
+  gap: 20px
+}
+
+.request:hover {
+  background-color: #363a3F;
+}
+
+.projectTag {
+  color: #09f;
+}

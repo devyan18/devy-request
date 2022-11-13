@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "project": "notes",
+    "auth-token": "",
+    "url": "localhost:4000/notes",
+    "protocol": "https",
+    "requests": [
+      {
+        "method": "GET",
+        "url": "/",
+        "auth-required": false
+      },
+      {
+        "method": "POST",
+        "url": "/",
+        "auth-required": true,
+        "body": {
+          "title": "test",
+          "content": "test"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "project": "tasks",
+    "auth-token": "",
+    "url": "localhost:4000/tasks",
+    "protocol": "http",
+    "requests": [
+      {
+        "method": "GET",
+        "url": "/",
+        "auth-required": false
+      },
+      {
+        "method": "POST",
+        "url": "/",
+        "auth-required": true,
+        "body": {
+          "title": "test",
+          "content": "test"
+        }
+      }
+    ]
+  }
+]

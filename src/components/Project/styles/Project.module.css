@@ -1,0 +1,22 @@
+.project {
+  padding: 0;
+  padding: 8px;
+  transition: all .2s ease-in-out;
+  border-radius: 8px;
+}
+
+.project:hover {
+  background-color: #363a3F;
+}
+
+.projectName {
+  pointer-events: none;
+  font-size: 1.5rem;
+  margin: 0px;
+  margin-bottom: 8px;
+}
+
+.projectUrl {
+  pointer-events: none;
+  font-size: 1rem;
+}
