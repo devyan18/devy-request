@@ -25,6 +25,7 @@ module.exports = {
   rules: {
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
-    semi: ['error', 'always']
+    semi: ['error', 'always'],
+    'no-useless-constructor': 'off'
   }
 };
